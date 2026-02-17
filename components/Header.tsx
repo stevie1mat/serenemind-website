@@ -33,7 +33,7 @@ export function Header() {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center">
                         <span className="text-2xl font-serif font-bold text-foreground">
-                            MahaCura
+                            SereneMind
                         </span>
                     </div>
 
@@ -45,7 +45,7 @@ export function Header() {
                         <a href="#science" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Science
                         </a>
-                        <a href="#privacy" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                        <a href="/privacy" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Privacy
                         </a>
                         <button onClick={() => toast.success("Coming Soon!")} className="rounded-full bg-foreground text-background px-6 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors">
@@ -78,7 +78,7 @@ export function Header() {
                         <a href="#science" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Science
                         </a>
-                        <a href="#privacy" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
+                        <a href="/privacy" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Privacy
                         </a>
                         <button onClick={() => toast.success("Coming Soon!")} className="w-full rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors">

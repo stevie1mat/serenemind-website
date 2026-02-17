@@ -8,15 +8,15 @@ export function Footer() {
             <div className="container mx-auto flex flex-col items-center justify-between gap-8 px-4 md:flex-row">
 
                 <div className="flex flex-col items-center gap-2 md:items-start">
-                    <span className="text-xl font-serif font-bold text-foreground">MahaCura</span>
-                    <p className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} MahaCura. All rights reserved.
+                    <span className="text-xl font-serif font-bold text-foreground">SereneMind</span>
+                    <p className="text-sm text-secondary-foreground">
+                        © {new Date().getFullYear()} SereneMind. All rights reserved.
                     </p>
                 </div>
 
                 <div className="flex gap-6 text-sm text-muted-foreground">
                     <a href="#" className="hover:text-foreground">Terms</a>
-                    <a href="#" className="hover:text-foreground">Privacy</a>
+                    <a href="/privacy" className="hover:text-foreground">Privacy</a>
                     <a href="#" className="hover:text-foreground">Contact</a>
                 </div>
 

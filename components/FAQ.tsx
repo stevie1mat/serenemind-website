@@ -6,20 +6,20 @@ import { useState } from "react";
 
 const faqs = [
     {
-        q: "Is my data stored in Canada?",
-        a: "Yes. We use Canadian-based data centers (Montreal region) to ensure your health data never leaves the country, fully complying with PIPEDA.",
+        q: "Is my data private?",
+        a: "Absolutely. Your mental health data is encrypted and stored securely. We never sell your personal information to third parties.",
     },
     {
-        q: "Does it sync with Apple Health?",
-        a: "Absolutely. MahaCura offers 2-way sync with Apple Health, so all your data lives in one secure place.",
+        q: "What is CBT?",
+        a: "Cognitive Behavioral Therapy (CBT) is an evidence-based approach that helps you identify and change negative thought patterns. SereneMind guides you through these techniques.",
     },
     {
-        q: "Is the basic version free?",
-        a: "Yes! The core period tracking, inventory checks, and symptom logging are 100% free forever. Luna AI insights require a premium subscription.",
+        q: "Is the app free to use?",
+        a: "Yes! Core features like mood tracking, basic journaling, and standard anxiety relief tools are free forever. Premium content offers deeper insights and advanced exercises.",
     },
     {
-        q: "Which stores does the inventory tracker work with?",
-        a: "Currently, we track stock at major Canadian retailers including Shoppers Drug Mart, Rexall, London Drugs, and Walmart Canada.",
+        q: "Can I share my progress with my therapist?",
+        a: "Yes. You can export your mood logs and thought records to share with your healthcare provider for more effective sessions.",
     },
 ];
 

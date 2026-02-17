@@ -5,31 +5,31 @@ import { Brain, Zap, Moon, Sun } from "lucide-react";
 
 const phases = [
     {
-        title: "Menstrual Phase",
-        desc: "Rest & Reflect",
-        details: "Luna suggests low-impact movement and iron-rich foods to support your body's reset.",
-        icon: Moon,
+        title: "Cognitive Reframing",
+        desc: "Challenge Thoughts",
+        details: "Learn to identify and challenge negative thought patterns (ANTs) that drive anxiety.",
+        icon: Brain,
         color: "bg-pink-100 text-pink-600",
     },
     {
-        title: "Follicular Phase",
-        desc: "Rise & Shine",
-        details: "Estrogen rises. You feel energetic. Luna prompts you to tackle complex tasks and try new workouts.",
+        title: "Behavioral Activation",
+        desc: "Take Action",
+        details: "Break the cycle of avoidance by engaging in positive activities that boost your mood and confidence.",
         icon: Sun,
         color: "bg-yellow-100 text-yellow-600",
     },
     {
-        title: "Ovulatory Phase",
-        desc: "Peak Performance",
-        details: "Confidence is high. It's the best time for social events and big presentations. Luna helps you capitalize on this peak.",
+        title: "Mindfulness",
+        desc: "Stay Present",
+        details: "Ground yourself in the moment using breathing exercises and sensory awareness techniques.",
         icon: Zap,
         color: "bg-purple-100 text-purple-600",
     },
     {
-        title: "Luteal Phase",
-        desc: "Wind Down",
-        details: "Progesterone dominates. You might feel deeper focus but lower energy. Luna shifts to prioritizing sleep and comfort.",
-        icon: Brain,
+        title: "Exposure Therapy",
+        desc: "Build Courage",
+        details: "Gradually face your fears in a safe, controlled way to reduce their power over time.",
+        icon: Moon,
         color: "bg-indigo-100 text-indigo-600",
     },
 ];
@@ -44,10 +44,10 @@ export function Science() {
             <div className="container px-4 md:px-6 relative z-10 mx-auto">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl font-serif font-medium tracking-tight sm:text-4xl mb-4">
-                        More Than Just a Calendar: <span className="text-primary italic">It&apos;s Biology.</span>
+                        Backed by Science: <span className="text-primary italic">CBT Works.</span>
                     </h2>
-                    <p className="text-muted-foreground text-lg">
-                        Your body isn&apos;t the same every day, so why should your app be? Luna adapts to your unique 4-phase rhythm.
+                    <p className="text-secondary-foreground text-lg">
+                        SereneMind uses evidence-based Cognitive Behavioral Therapy principles to help you feel better, faster.
                     </p>
                 </div>
 

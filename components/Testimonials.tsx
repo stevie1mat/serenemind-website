@@ -5,19 +5,19 @@ import { Star } from "lucide-react";
 
 const testimonials = [
     {
-        quote: "Finally, an app that actually knows what Shoppers Drug Mart has in stock! No more wasted trips when I need ibuprofen.",
+        quote: "The 'Mind Lab' tool helped me de-escalate a panic attack in minutes. Having these tools in my pocket makes me feel so much safer.",
         author: "Emily R.",
         location: "Toronto, ON",
         avatar: "https://randomuser.me/api/portraits/women/65.jpg",
     },
     {
-        quote: "Luna predicted my luteal phase burnout perfectly. I proactively cleared my schedule and felt so much better.",
+        quote: "I never realized how much my mood fluctuated until I started tracking it. The insights are spot on and really help me plan my week.",
         author: "Sarah L.",
         location: "Vancouver, BC",
         avatar: "https://randomuser.me/api/portraits/women/42.jpg",
     },
     {
-        quote: "Privacy laws in Canada matter to me. Knowing my health data is encrypted and stays local makes me feel safe.",
+        quote: "A beautiful, calming app that doesn't feel clinical. It's like a warm hug when I'm feeling overwhelmed.",
         author: "Chloe M.",
         location: "Montreal, QC",
         avatar: "https://randomuser.me/api/portraits/women/89.jpg",
@@ -30,10 +30,10 @@ export function Testimonials() {
             <div className="container px-4 md:px-6 relative z-10 mx-auto">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl font-serif font-medium tracking-tight sm:text-4xl mb-4">
-                        Trusted by Women Across <span className="text-red-500">Canada</span>.
+                        Trusted by Thousands of <span className="text-primary">Users</span>.
                     </h2>
-                    <p className="text-muted-foreground text-lg">
-                        Join the community that&apos;s redefining women&apos;s health from coast to coast.
+                    <p className="text-secondary-foreground text-lg">
+                        Join the community that&apos;s prioritizing mental wellness every day.
                     </p>
                 </div>
 

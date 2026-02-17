@@ -10,8 +10,8 @@ export function Hero() {
     return (
         <section className="relative overflow-hidden bg-background pt-24 pb-32 md:pt-32 md:pb-48">
             {/* Background/Gradient Orb - Animated */}
-            <div className="absolute top-0 right-0 -z-10 h-[600px] w-[600px] rounded-full bg-secondary/30 blur-3xl filter" />
-            <div className="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] rounded-full bg-primary/10 blur-3xl filter" />
+            <div className="absolute top-0 right-0 -z-10 h-[600px] w-[600px] rounded-full bg-primary/20 blur-3xl filter" />
+            <div className="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] rounded-full bg-accent/30 blur-3xl filter" />
 
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
@@ -24,11 +24,11 @@ export function Hero() {
                     >
                         <div className="space-y-4">
                             <h1 className="text-4xl font-serif font-medium tracking-tight text-foreground sm:text-5xl xl:text-6xl/none">
-                                Meet <span className="text-primary italic">Luna.</span> <br />
-                                Your cycle&apos;s new best friend.
+                                Meet <span className="text-primary italic">Renne.</span> <br />
+                                Your AI Wellness Companion.
                             </h1>
-                            <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl">
-                                Sync your life with your biology. <span className="font-semibold text-foreground">Luna (AI)</span> predicts your energy and mood, while tracking your <span className="text-secondary-foreground">inventory and local supplies</span> so you never run out.
+                            <p className="max-w-[600px] text-lg text-secondary-foreground md:text-xl">
+                                A holistic wellness app for women. <span className="font-semibold text-foreground">Renne</span> uses CBT and gentle AI guidance to help you navigate anxiety, track moods, and find your balance.
                             </p>
                         </div>
 
@@ -37,21 +37,21 @@ export function Hero() {
                                 <Download className="mr-2 h-4 w-4" />
                                 Download App
                             </button>
-                            <a href="#science" className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                                Meet Luna
+                            <a href="#features" className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+                                Explore Tools
                             </a>
                         </div>
 
-                        <div className="text-sm text-muted-foreground flex items-center gap-2">
+                        <div className="text-sm text-secondary-foreground flex items-center gap-2">
                             <div className="flex -space-x-2">
                                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" className="w-8 h-8 rounded-full border-2 border-background object-cover" />
-                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" className="w-8 h-8 rounded-full border-2 border-background object-cover" />
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" className="w-8 h-8 rounded-full border-2 border-background object-cover" />
                                 <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" className="w-8 h-8 rounded-full border-2 border-background object-cover" />
                                 <div className="w-8 h-8 rounded-full border-2 border-background bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-500">
-                                    +10k
+                                    +5k
                                 </div>
                             </div>
-                            <span className="font-medium">Trusted by 10,000+ users</span>
+                            <span className="font-medium">Trusted by 5,000+ users</span>
                         </div>
                     </motion.div>
 
@@ -75,9 +75,9 @@ export function Hero() {
                                 transform: "rotateY(-12deg) rotateX(5deg) rotateZ(-2deg)"
                             }}
                         >
-                            {/* 3D Circle/Orb Behind - Very Light Pink */}
+                            {/* 3D Circle/Orb Behind - Soft Pink */}
                             <div
-                                className="absolute top-1/2 left-1/2 w-[480px] h-[480px] rounded-full bg-gradient-to-br from-emerald-100 via-teal-200 to-emerald-300 blur-2xl -z-20 opacity-80"
+                                className="absolute top-1/2 left-1/2 w-[480px] h-[480px] rounded-full bg-gradient-to-br from-pink-100 via-rose-200 to-pink-300 blur-2xl -z-20 opacity-80"
                                 style={{
                                     transform: "translate(-50%, -50%) translateZ(-100px)",
                                     boxShadow: "inset -10px -10px 40px rgba(0,0,0,0.05), inset 10px 10px 30px rgba(255,255,255,0.4)"
@@ -100,10 +100,10 @@ export function Hero() {
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 h-6 w-28 bg-black rounded-b-xl z-20" />
 
                                 {/* Screen Image */}
-                                <div className="relative w-full h-full bg-[#E0F2F1]">
+                                <div className="relative w-full h-full bg-[#FFF0F3]">
                                     <Image
-                                        src="/app_screen_pink.png"
-                                        alt="MahaCura App Interface"
+                                        src="/mockup.png"
+                                        alt="SereneMind App Interface"
                                         fill
                                         className="object-cover"
                                         priority
@@ -113,7 +113,7 @@ export function Hero() {
                                 </div>
                             </div>
 
-                            {/* Floating Elements - Luna Chat Bubble */}
+                            {/* Floating Elements - Chat Bubble */}
                             <motion.div
                                 animate={{ y: [0, -8, 0] }}
                                 transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 0.5 }}
@@ -122,12 +122,12 @@ export function Hero() {
                             >
                                 <div className="flex gap-3">
                                     <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-primary to-accent flex items-center justify-center shrink-0 shadow-sm">
-                                        <span className="text-white text-xs font-bold">✨</span>
+                                        <span className="text-white text-xs font-bold">🌸</span>
                                     </div>
                                     <div>
-                                        <div className="font-bold text-xs text-foreground mb-0.5">Luna</div>
+                                        <div className="font-bold text-xs text-foreground mb-0.5">Renne</div>
                                         <p className="text-[10px] text-muted-foreground leading-tight">
-                                            Hey! Your energy is peaking. Use it now! 💪
+                                            Great job challenging that thought! How do you feel now?
                                         </p>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@ export function Hero() {
                                     <div className="h-8 w-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center">
                                         <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                                     </div>
-                                    <div className="text-xs font-medium text-foreground pr-2">Cycle synced</div>
+                                    <div className="text-xs font-medium text-foreground pr-2">Anxiety reduced</div>
                                 </div>
                             </motion.div>
                         </motion.div>

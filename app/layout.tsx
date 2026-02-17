@@ -15,13 +15,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "MahaCura Canada | #1 AI Cycle Syncing & Period Tracker",
-  description: "Join thousands of Canadian women mastering their cycle with MahaCura. Localized inventory tracking for brands you love (Shoppers, Rexall) and AI-backed health insights.",
-  keywords: ["Period Tracker Canada", "MahaCura Canada", "Cycle Syncing App", "Women's Health Canada", "Ovulation Tracker Toronto", "Menstrual Cycle App"],
+  title: "SereneMind CBT | #1 Anime-Inspired Anxiety Relief & CBT Tools",
+  description: "Find your calm with SereneMind CBT. Master anxiety with CBT-based tools, mood tracking, and a supportive community. Your daily companion for mental wellness.",
+  keywords: ["Anxiety Relief", "CBT App", "SereneMind", "Mental Health", "Mood Tracker", "CBT Tools", "Panic Attack Help"],
   openGraph: {
-    title: "MahaCura Canada",
-    description: "The only period tracker that knows what's in stock at your local Canadian pharmacy. AI-powered, privacy-first.",
-    locale: "en_CA",
+    title: "SereneMind CBT",
+    description: "The holistic CBT app for anxiety relief. Track moods, challenge thoughts, and find calm with evidence-based tools.",
+    locale: "en_US",
     type: "website",
   },
 };

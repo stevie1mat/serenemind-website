@@ -28,9 +28,9 @@ export function Privacy() {
                     </p>
 
                     <div className="pt-4">
-                        <button className="text-sm font-semibold text-primary decoration-primary underline-offset-4 hover:underline">
+                        <a href="/privacy" className="text-sm font-semibold text-primary decoration-primary underline-offset-4 hover:underline">
                             Read our full Privacy Promise &rarr;
-                        </button>
+                        </a>
                     </div>
                 </motion.div>
             </div>
