@@ -1,15 +1,30 @@
 import { Metadata } from 'next';
+import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | SereneMind CBT',
-    description: 'Our commitment to your privacy. Learn how SereneMind CBT protects your personal data.',
+    title: 'Privacy Policy',
+    description: 'Learn how SereneMind CBT collects, uses, protects, and manages your personal information.',
+    alternates: {
+        canonical: '/privacy',
+    },
+    openGraph: {
+        title: 'Privacy Policy | SereneMind CBT',
+        description: 'Our commitment to your privacy and data protection.',
+        url: '/privacy',
+        type: 'article',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Privacy Policy | SereneMind CBT',
+        description: 'Our commitment to your privacy and data protection.',
+    },
 };
 
 export default function PrivacyPage() {
     return (
         <div className="container mx-auto px-4 py-24 md:py-32 max-w-4xl">
             <h1 className="text-4xl font-serif font-bold mb-8">Privacy Policy</h1>
-            <p className="text-secondary-foreground mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+            <p className="text-secondary-foreground mb-8">Last updated: February 17, 2026</p>
 
             <div className="space-y-8 text-foreground/80 leading-relaxed">
                 <section>
@@ -56,7 +71,7 @@ export default function PrivacyPage() {
                         If there are any questions regarding this privacy policy, you may contact us using the information below:
                         <br /><br />
                         <strong>SereneMind Support</strong><br />
-                        support@serenemindcbt.com
+                        {siteConfig.email}
                     </p>
                 </section>
             </div>

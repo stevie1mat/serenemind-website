@@ -1,6 +1,6 @@
-"use client";
-
 import { Heart } from "lucide-react";
+import Link from "next/link";
+import { siteConfig } from "@/lib/site";
 
 export function Footer() {
     return (
@@ -15,9 +15,10 @@ export function Footer() {
                 </div>
 
                 <div className="flex gap-6 text-sm text-muted-foreground">
-                    <a href="#" className="hover:text-foreground">Terms</a>
-                    <a href="/privacy" className="hover:text-foreground">Privacy</a>
-                    <a href="#" className="hover:text-foreground">Contact</a>
+                    <Link href="/terms" className="hover:text-foreground">Terms</Link>
+                    <Link href="/privacy" className="hover:text-foreground">Privacy</Link>
+                    <Link href="/delete-account" className="hover:text-foreground">Delete Account</Link>
+                    <a href={`mailto:${siteConfig.email}`} className="hover:text-foreground">Contact</a>
                 </div>
 
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">

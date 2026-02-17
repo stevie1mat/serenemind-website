@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -45,9 +46,9 @@ export function Header() {
                         <a href="#science" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Science
                         </a>
-                        <a href="/privacy" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                        <Link href="/privacy" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Privacy
-                        </a>
+                        </Link>
                         <button onClick={() => toast.success("Coming Soon!")} className="rounded-full bg-foreground text-background px-6 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors">
                             Download App
                         </button>
@@ -78,9 +79,9 @@ export function Header() {
                         <a href="#science" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Science
                         </a>
-                        <a href="/privacy" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
+                        <Link href="/privacy" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Privacy
-                        </a>
+                        </Link>
                         <button onClick={() => toast.success("Coming Soon!")} className="w-full rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors">
                             Download App
                         </button>

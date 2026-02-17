@@ -44,9 +44,9 @@ export function Hero() {
 
                         <div className="text-sm text-secondary-foreground flex items-center gap-2">
                             <div className="flex -space-x-2">
-                                <Image src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-background object-cover" />
-                                <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-background object-cover" />
-                                <Image src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-background object-cover" />
+                                <Image src="https://randomuser.me/api/portraits/women/44.jpg" alt="Community member portrait" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-background object-cover" />
+                                <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="Community member portrait" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-background object-cover" />
+                                <Image src="https://randomuser.me/api/portraits/women/68.jpg" alt="Community member portrait" width={32} height={32} className="w-8 h-8 rounded-full border-2 border-background object-cover" />
                                 <div className="w-8 h-8 rounded-full border-2 border-background bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-500">
                                     +5k
                                 </div>

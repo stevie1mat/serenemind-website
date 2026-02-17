@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,15 +16,59 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "SereneMind CBT | #1 Anime-Inspired Anxiety Relief & CBT Tools",
-  description: "Find your calm with SereneMind CBT. Master anxiety with CBT-based tools, mood tracking, and a supportive community. Your daily companion for mental wellness.",
-  keywords: ["Anxiety Relief", "CBT App", "SereneMind", "Mental Health", "Mood Tracker", "CBT Tools", "Panic Attack Help"],
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.defaultTitle,
+    template: "%s | SereneMind CBT",
+  },
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  keywords: [...siteConfig.keywords],
+  alternates: {
+    canonical: "/",
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
   openGraph: {
-    title: "SereneMind CBT",
-    description: "The holistic CBT app for anxiety relief. Track moods, challenge thoughts, and find calm with evidence-based tools.",
+    title: siteConfig.defaultTitle,
+    description: siteConfig.description,
     locale: "en_US",
     type: "website",
+    siteName: siteConfig.name,
+    url: "/",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SereneMind CBT app preview and anxiety support tools",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.defaultTitle,
+    description: siteConfig.description,
+    images: ["/twitter-image"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f6e7ed",
 };
 
 export default function RootLayout({
