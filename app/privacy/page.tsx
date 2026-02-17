@@ -15,9 +15,9 @@ export default function PrivacyPage() {
                 <section>
                     <h2 className="text-2xl font-serif font-semibold mb-4">1. Introduction</h2>
                     <p>
-                        At SereneMind CBT ("we," "us," or "our"), we believe that privacy is a fundamental human right.
+                        At SereneMind CBT (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), we believe that privacy is a fundamental human right.
                         This Privacy Policy explains how we collect, use, disclosure, and safeguard your information when you visit our website
-                        and use our mobile application (the "Service").
+                        and use our mobile application (the &quot;Service&quot;).
                     </p>
                 </section>
 

@@ -34,7 +34,7 @@ export function Features() {
                         </div>
                         <h3 className="text-2xl font-serif font-semibold text-foreground mb-2">Pattern Recognition</h3>
                         <p className="text-secondary-foreground max-w-sm">
-                            Beyond simple emojis. Spot triggers and trends in your mood over time, helping you understand the "why" behind your feelings.
+                            Beyond simple emojis. Spot triggers and trends in your mood over time, helping you understand the &quot;why&quot; behind your feelings.
                         </p>
                     </div>
 
@@ -181,7 +181,7 @@ export function Features() {
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-[11px] font-bold text-foreground">Renne</span>
-                                <span className="text-[10px] text-muted-foreground leading-tight">I'm here for you. How is your anxiety today?</span>
+                                <span className="text-[10px] text-muted-foreground leading-tight">I&apos;m here for you. How is your anxiety today?</span>
                             </div>
                         </div>
                     </div>
