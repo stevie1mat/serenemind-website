@@ -32,12 +32,12 @@ export function Hero() {
                         </div>
 
                         <div className="flex flex-col gap-4 sm:flex-row">
-                            <Link href="/app" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:scale-105 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+                            <Link href="/tools" className="inline-flex h-12 items-center justify-center rounded-full bg-foreground px-8 text-sm font-semibold text-white shadow-xl shadow-foreground/25 transition-all hover:bg-foreground/90 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+                                Explore Tools
+                            </Link>
+                            <Link href="/app" className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                                 <Download className="mr-2 h-4 w-4" />
                                 Download App
-                            </Link>
-                            <Link href="/tools" className="inline-flex h-12 items-center justify-center rounded-full border border-input bg-background/50 backdrop-blur-sm px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                                Explore Tools
                             </Link>
                         </div>
 
