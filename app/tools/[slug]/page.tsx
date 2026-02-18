@@ -5,9 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { freeTools, getToolBySlug } from "@/lib/tools";
 import { siteConfig } from "@/lib/site";
-import { JobRejectionResetTool } from "@/components/tools/JobRejectionResetTool";
-import { InterviewAnxietyPlannerTool } from "@/components/tools/InterviewAnxietyPlannerTool";
-import { CycleMoodInsightTool } from "@/components/tools/CycleMoodInsightTool";
+import { GenericInsightTool } from "@/components/tools/GenericInsightTool";
 
 type ToolPageProps = {
   params: {
@@ -52,22 +50,12 @@ export function generateMetadata({ params }: ToolPageProps): Metadata {
   };
 }
 
-function renderTool(slug: string, ctaText: string) {
-  if (slug === "job-rejection-reset") {
-    return <JobRejectionResetTool ctaText={ctaText} />;
-  }
-  if (slug === "interview-anxiety-planner") {
-    return <InterviewAnxietyPlannerTool ctaText={ctaText} />;
-  }
-  if (slug === "cycle-mood-insight-check") {
-    return <CycleMoodInsightTool ctaText={ctaText} />;
-  }
-  return null;
-}
-
 export default function ToolPage({ params }: ToolPageProps) {
   const tool = getToolBySlug(params.slug);
   if (!tool) notFound();
+  const relatedTools = freeTools
+    .filter((item) => item.slug !== tool.slug)
+    .slice(0, 4);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -146,7 +134,7 @@ export default function ToolPage({ params }: ToolPageProps) {
           ))}
         </section>
 
-        {renderTool(tool.slug, tool.ctaText)}
+        <GenericInsightTool tool={tool} />
 
         <section className="mt-8 rounded-2xl border border-accent/70 bg-white/85 p-6">
           <h2 className="mb-4 text-2xl font-semibold text-foreground">Frequently asked questions</h2>
@@ -159,10 +147,44 @@ export default function ToolPage({ params }: ToolPageProps) {
             ))}
           </div>
         </section>
+
+        <section className="mt-8 rounded-2xl border border-accent/70 bg-white/85 p-6">
+          <h2 className="mb-4 text-2xl font-semibold text-foreground">Related internal links</h2>
+          <div className="grid gap-3 md:grid-cols-2">
+            {relatedTools.map((item) => (
+              <Link
+                key={item.slug}
+                href={`/tools/${item.slug}`}
+                className="rounded-xl border border-accent/60 bg-background/55 p-4 text-sm font-medium text-foreground transition hover:bg-background"
+              >
+                {item.shortTitle}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link
+              href="/tools"
+              className="rounded-full border border-accent/70 px-4 py-2 text-sm font-medium text-foreground transition hover:bg-background"
+            >
+              Browse all tools
+            </Link>
+            <Link
+              href="/articles"
+              className="rounded-full border border-accent/70 px-4 py-2 text-sm font-medium text-foreground transition hover:bg-background"
+            >
+              Read anxiety articles
+            </Link>
+            <Link
+              href="/app"
+              className="rounded-full bg-foreground px-4 py-2 text-sm font-medium text-white transition hover:bg-foreground/90"
+            >
+              Continue in app
+            </Link>
+          </div>
+        </section>
       </section>
 
       <Footer />
     </main>
   );
 }
-

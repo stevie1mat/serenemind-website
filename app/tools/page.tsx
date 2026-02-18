@@ -5,17 +5,15 @@ import { Footer } from "@/components/Footer";
 import { freeTools } from "@/lib/tools";
 import { siteConfig } from "@/lib/site";
 
+const toolsHubKeywords = Array.from(
+  new Set(freeTools.flatMap((tool) => tool.keywords))
+).slice(0, 80);
+
 export const metadata: Metadata = {
   title: "Free Anxiety Tools for Women",
   description:
     "Try free interactive anxiety and CBT tools for women: job rejection reset, interview anxiety planner, and cycle mood insight check.",
-  keywords: [
-    "free anxiety tools",
-    "cbt tools for women",
-    "job rejection anxiety help",
-    "interview anxiety tool",
-    "menstrual mood anxiety check",
-  ],
+  keywords: toolsHubKeywords,
   alternates: {
     canonical: "/tools",
   },
@@ -107,4 +105,3 @@ export default function ToolsHubPage() {
     </main>
   );
 }
-

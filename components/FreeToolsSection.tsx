@@ -27,7 +27,7 @@ export function FreeToolsSection() {
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
-          {freeTools.map((tool) => (
+          {freeTools.slice(0, 6).map((tool) => (
             <article key={tool.slug} className="rounded-2xl border border-accent/70 bg-white/85 p-5">
               <h3 className="mb-2 text-xl font-semibold text-foreground">{tool.shortTitle}</h3>
               <p className="mb-4 text-sm text-secondary-foreground">{tool.description}</p>
@@ -44,4 +44,3 @@ export function FreeToolsSection() {
     </section>
   );
 }
-
