@@ -1,7 +1,5 @@
 "use client";
 
-import { toast } from "sonner";
-
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -40,18 +38,21 @@ export function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-8">
-                        <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                        <Link href="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Features
-                        </a>
-                        <a href="#science" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                        </Link>
+                        <Link href="/#science" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Science
-                        </a>
+                        </Link>
+                        <Link href="/articles" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                            Articles
+                        </Link>
                         <Link href="/privacy" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Privacy
                         </Link>
-                        <button onClick={() => toast.success("Coming Soon!")} className="rounded-full bg-foreground text-background px-6 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors">
+                        <Link href="/app" className="rounded-full bg-foreground text-background px-6 py-2.5 text-sm font-medium hover:bg-foreground/90 transition-colors">
                             Download App
-                        </button>
+                        </Link>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -73,18 +74,21 @@ export function Header() {
                     className="absolute top-full left-0 right-0 bg-white border-b border-gray-100 p-4 md:hidden shadow-lg"
                 >
                     <nav className="flex flex-col gap-4">
-                        <a href="#features" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
+                        <Link href="/#features" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Features
-                        </a>
-                        <a href="#science" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
+                        </Link>
+                        <Link href="/#science" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Science
-                        </a>
+                        </Link>
+                        <Link href="/articles" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
+                            Articles
+                        </Link>
                         <Link href="/privacy" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Privacy
                         </Link>
-                        <button onClick={() => toast.success("Coming Soon!")} className="w-full rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors">
+                        <Link href="/app" className="w-full rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors text-center">
                             Download App
-                        </button>
+                        </Link>
                     </nav>
                 </motion.div>
             )}

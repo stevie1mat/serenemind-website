@@ -6,6 +6,12 @@ export const siteConfig = {
     "SereneMind CBT helps you manage anxiety with evidence-based CBT tools, mood tracking, guided exercises, and supportive AI check-ins.",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.serenemindcbt.com").replace(/\/+$/, ""),
   email: "support@serenemindcbt.com",
+  appStoreUrl:
+    process.env.NEXT_PUBLIC_APP_STORE_URL ||
+    "https://apps.apple.com/us/search?term=SereneMind%20CBT",
+  playStoreUrl:
+    process.env.NEXT_PUBLIC_PLAY_STORE_URL ||
+    "https://play.google.com/store/apps/details?id=com.steviemat.serenemindcbt",
   keywords: [
     "anxiety relief app",
     "CBT app",
@@ -17,4 +23,3 @@ export const siteConfig = {
     "women wellness app",
   ],
 } as const;
-
