@@ -9,6 +9,7 @@ import { FAQ } from "@/components/FAQ";
 import { Privacy } from "@/components/Privacy";
 import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/lib/site";
+import { FreeToolsSection } from "@/components/FreeToolsSection";
 
 export const metadata: Metadata = {
   alternates: {
@@ -89,6 +90,7 @@ export default function Home() {
       <Hero />
       <Science />
       <Features />
+      <FreeToolsSection />
       <HowItWorks />
       <Testimonials />
       <FAQ />

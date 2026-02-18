@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
 import { articles } from "@/lib/articles";
+import { freeTools } from "@/lib/tools";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -29,11 +30,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${siteConfig.url}/tools`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${siteConfig.url}/articles`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    ...freeTools.map((tool) => ({
+      url: `${siteConfig.url}/tools/${tool.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    })),
     ...articles.map((article) => ({
       url: `${siteConfig.url}/articles/${article.slug}`,
       lastModified: new Date(article.updatedAt),

@@ -44,6 +44,9 @@ export function Header() {
                         <Link href="/#science" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Science
                         </Link>
+                        <Link href="/tools" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                            Tools
+                        </Link>
                         <Link href="/articles" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                             Articles
                         </Link>
@@ -79,6 +82,9 @@ export function Header() {
                         </Link>
                         <Link href="/#science" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Science
+                        </Link>
+                        <Link href="/tools" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
+                            Tools
                         </Link>
                         <Link href="/articles" className="text-base font-medium text-muted-foreground hover:text-foreground p-2">
                             Articles
