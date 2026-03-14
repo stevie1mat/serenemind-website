@@ -23,11 +23,11 @@ export function Hero() {
                     >
                         <div className="space-y-4">
                             <h1 className="text-4xl font-serif font-medium tracking-tight text-foreground sm:text-5xl xl:text-6xl/none">
-                                Meet <span className="text-primary italic">Renne.</span> <br />
-                                Your AI Wellness Companion.
+                                SereneMind CBT: <span className="text-primary italic">Anxiety Relief App</span> <br />
+                                for Women.
                             </h1>
                             <p className="max-w-[600px] text-lg text-secondary-foreground md:text-xl">
-                                A holistic wellness app for women. <span className="font-semibold text-foreground">Renne</span> uses CBT and gentle AI guidance to help you navigate anxiety, track moods, and find your balance.
+                                A holistic wellness app for women. <span className="font-semibold text-foreground">Renne</span> uses evidence-based CBT and gentle AI guidance to help you navigate anxiety, track moods, and find your balance.
                             </p>
                         </div>
 

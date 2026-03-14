@@ -17,6 +17,13 @@ export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
 }
 
+function toAbsoluteUrl(pathOrUrl: string): string {
+  if (/^https?:\/\//i.test(pathOrUrl)) {
+    return pathOrUrl;
+  }
+  return `${siteConfig.url}${pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`}`;
+}
+
 export function generateMetadata({ params }: ArticlePageProps): Metadata {
   const article = getArticleBySlug(params.slug);
   if (!article) {
@@ -43,13 +50,13 @@ export function generateMetadata({ params }: ArticlePageProps): Metadata {
       url: `/articles/${article.slug}`,
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
-      images: [article.imageSrc],
+      images: [toAbsoluteUrl(article.imageSrc)],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      images: [article.imageSrc],
+      images: [toAbsoluteUrl(article.imageSrc)],
     },
   };
 }
@@ -104,7 +111,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
       name: siteConfig.name,
       url: siteConfig.url,
     },
-    image: `${siteConfig.url}${article.imageSrc}`,
+    image: toAbsoluteUrl(article.imageSrc),
     keywords: article.keywords.join(", "),
   };
 

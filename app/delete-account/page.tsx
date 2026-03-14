@@ -4,6 +4,14 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
     title: "Delete Account",
     description: "Instructions for deleting your SereneMind CBT account and associated data.",
+    robots: {
+        index: false,
+        follow: false,
+        googleBot: {
+            index: false,
+            follow: false,
+        },
+    },
 };
 
 export default function DeleteAccountPage() {
