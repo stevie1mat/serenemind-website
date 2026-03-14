@@ -8,9 +8,9 @@ const normalizedSiteUrl = configuredSiteUrl
 export const siteConfig = {
   name: "SereneMind CBT",
   shortName: "SereneMind",
-  defaultTitle: "SereneMind CBT | Anxiety Relief App with AI & CBT Tools",
+  defaultTitle: "Women CBT App for Anxiety Relief | SereneMind CBT",
   description:
-    "SereneMind CBT helps you manage anxiety with evidence-based CBT tools, mood tracking, guided exercises, and supportive AI check-ins.",
+    "SereneMind CBT is a women CBT app that helps you manage anxiety with evidence-based CBT tools, mood tracking, guided exercises, and supportive AI check-ins.",
   url: normalizedSiteUrl || defaultSiteUrl,
   email: "support@serenemindcbt.com",
   appStoreUrl:
@@ -20,6 +20,10 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_PLAY_STORE_URL ||
     "https://play.google.com/store/apps/details?id=com.steviemat.serenemindcbt",
   keywords: [
+    "women cbt",
+    "women cbt app",
+    "cbt for women",
+    "women anxiety cbt",
     "anxiety relief app",
     "CBT app",
     "mental wellness app",

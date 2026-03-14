@@ -7,10 +7,13 @@ import { articles } from "@/lib/articles";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Anxiety & CBT Articles",
+  title: "Women CBT Anxiety Articles",
   description:
-    "Evidence-based articles on anxiety, CBT tools, breathing techniques, and practical mental wellness habits.",
+    "Evidence-based women CBT anxiety articles on thought reframing, breathing techniques, and practical mental wellness habits.",
   keywords: [
+    "women cbt",
+    "cbt for women",
+    "women cbt articles",
     "anxiety articles",
     "cbt articles",
     "anxiety relief guide",
@@ -20,18 +23,18 @@ export const metadata: Metadata = {
     canonical: "/articles",
   },
   openGraph: {
-    title: "SereneMind CBT Articles",
+    title: "Women CBT Anxiety Articles | SereneMind",
     description:
-      "Read practical guides on anxiety management, CBT skills, and daily mental wellness routines.",
+      "Read practical women CBT guides on anxiety management, CBT skills, and daily mental wellness routines.",
     url: "/articles",
     type: "website",
     images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SereneMind CBT Articles",
+    title: "Women CBT Anxiety Articles | SereneMind",
     description:
-      "Practical anxiety and CBT guides designed for real daily use.",
+      "Practical women CBT anxiety guides designed for real daily use.",
     images: ["/twitter-image"],
   },
 };
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "SereneMind CBT Articles",
+  name: "SereneMind Women CBT Articles",
   itemListElement: articles.map((article, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -60,10 +63,10 @@ export default function ArticlesPage() {
       <section className="container mx-auto max-w-5xl px-4 pb-20 pt-32">
         <div className="mb-10">
           <h1 className="mb-3 font-serif text-4xl font-bold text-foreground md:text-5xl">
-            Anxiety & CBT Articles
+            Women CBT Anxiety Articles
           </h1>
           <p className="max-w-2xl text-base text-secondary-foreground md:text-lg">
-            Practical, research-aligned guides on anxiety relief, CBT skills, thought reframing,
+            Practical, research-aligned women CBT guides on anxiety relief, thought reframing,
             breathing routines, and behavior change.
           </p>
         </div>

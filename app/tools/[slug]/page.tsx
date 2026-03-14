@@ -29,23 +29,29 @@ export function generateMetadata({ params }: ToolPageProps): Metadata {
     };
   }
 
+  const seoKeywords = Array.from(
+    new Set([...tool.keywords, "women cbt", "cbt for women", "women anxiety cbt"])
+  );
+  const seoTitle = `${tool.title} | Women CBT`;
+  const seoDescription = `${tool.description} Built with women-focused CBT guidance.`;
+
   return {
-    title: tool.title,
-    description: tool.description,
-    keywords: tool.keywords,
+    title: seoTitle,
+    description: seoDescription,
+    keywords: seoKeywords,
     alternates: {
       canonical: `/tools/${tool.slug}`,
     },
     openGraph: {
-      title: tool.title,
-      description: tool.description,
+      title: seoTitle,
+      description: seoDescription,
       url: `/tools/${tool.slug}`,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: tool.title,
-      description: tool.description,
+      title: seoTitle,
+      description: seoDescription,
     },
   };
 }

@@ -6,36 +6,42 @@ import { freeTools } from "@/lib/tools";
 import { siteConfig } from "@/lib/site";
 
 const toolsHubKeywords = Array.from(
-  new Set(freeTools.flatMap((tool) => tool.keywords))
+  new Set([
+    ...freeTools.flatMap((tool) => tool.keywords),
+    "women cbt",
+    "cbt for women",
+    "women cbt tools",
+    "women anxiety cbt tools",
+  ])
 ).slice(0, 80);
 
 export const metadata: Metadata = {
-  title: "Free Anxiety Tools for Women",
+  title: "Free Women CBT Anxiety Tools",
   description:
-    "Try free interactive anxiety and CBT tools for women: job rejection reset, interview anxiety planner, and cycle mood insight check.",
+    "Try free interactive women CBT anxiety tools: job rejection reset, interview anxiety planner, and cycle mood insight check.",
   keywords: toolsHubKeywords,
   alternates: {
     canonical: "/tools",
   },
   openGraph: {
-    title: "Free Anxiety & CBT Tools",
+    title: "Free Women CBT Anxiety Tools",
     description:
-      "Interactive tools for career stress, interview anxiety, and cycle-linked mood support.",
+      "Interactive women CBT tools for career stress, interview anxiety, and cycle-linked mood support.",
     url: "/tools",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Anxiety & CBT Tools",
+    title: "Free Women CBT Anxiety Tools",
     description:
-      "Use these free interactive anxiety tools and continue in SereneMind CBT.",
+      "Use these free interactive women CBT anxiety tools and continue in SereneMind CBT.",
   },
 };
 
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "SereneMind CBT Free Tools",
+  name: "SereneMind Women CBT Free Tools",
   itemListElement: freeTools.map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -56,10 +62,10 @@ export default function ToolsHubPage() {
       <section className="container mx-auto max-w-5xl px-4 pb-20 pt-32">
         <div className="mb-10">
           <h1 className="mb-3 font-serif text-4xl font-bold text-foreground md:text-5xl">
-            Free Anxiety & CBT Tools for Women
+            Free Women CBT Anxiety Tools
           </h1>
           <p className="max-w-3xl text-base text-secondary-foreground md:text-lg">
-            Use these interactive tools to get immediate insight and practical next steps for
+            Use these women-focused CBT tools to get immediate insight and practical next steps for
             anxiety, confidence, and cycle-linked mood patterns. Each tool ends with a personalized
             result you can carry into the SereneMind app.
           </p>

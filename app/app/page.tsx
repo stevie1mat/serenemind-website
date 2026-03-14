@@ -5,24 +5,24 @@ import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Download SereneMind CBT",
+  title: "Download Women CBT App",
   description:
-    "Download SereneMind CBT on iPhone and Android. Access anxiety relief tools, CBT exercises, breathing support, and guided check-ins.",
+    "Download SereneMind CBT, a women CBT app for iPhone and Android. Access anxiety relief tools, CBT exercises, breathing support, and guided check-ins.",
   alternates: {
     canonical: "/app",
   },
   openGraph: {
-    title: "Download SereneMind CBT",
+    title: "Download Women CBT App | SereneMind CBT",
     description:
-      "Get SereneMind CBT on the App Store or Google Play and start your anxiety support plan.",
+      "Get SereneMind CBT, the women CBT app, on the App Store or Google Play and start your anxiety support plan.",
     url: "/app",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Download SereneMind CBT",
+    title: "Download Women CBT App | SereneMind CBT",
     description:
-      "Install SereneMind CBT on iPhone or Android.",
+      "Install SereneMind CBT, the women CBT app, on iPhone or Android.",
   },
 };
 
@@ -57,10 +57,10 @@ export default function AppDownloadPage() {
             SereneMind CBT
           </p>
           <h1 className="mb-4 font-serif text-4xl font-bold text-foreground md:text-5xl">
-            Download the App
+            Download the Women CBT App
           </h1>
           <p className="mb-8 max-w-2xl text-base text-secondary-foreground md:text-lg">
-            Choose your platform to get SereneMind CBT and start using guided anxiety relief,
+            Choose your platform to get SereneMind CBT and start using women-focused guided anxiety relief,
             thought reframing, breathing exercises, and progress tracking.
           </p>
 
@@ -123,4 +123,3 @@ export default function AppDownloadPage() {
     </main>
   );
 }
-

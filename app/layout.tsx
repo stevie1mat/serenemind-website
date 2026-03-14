@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.defaultTitle,
-    template: "%s | SereneMind CBT",
+    template: "%s | Women CBT | SereneMind CBT",
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,

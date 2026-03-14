@@ -36,16 +36,22 @@ export function generateMetadata({ params }: ArticlePageProps): Metadata {
     };
   }
 
+  const seoKeywords = Array.from(
+    new Set([...article.keywords, "women cbt", "cbt for women", "women anxiety cbt"])
+  );
+  const seoTitle = `${article.title} | Women CBT`;
+  const seoDescription = `${article.description} Women-focused CBT guidance for practical anxiety relief.`;
+
   return {
-    title: article.title,
-    description: article.description,
-    keywords: article.keywords,
+    title: seoTitle,
+    description: seoDescription,
+    keywords: seoKeywords,
     alternates: {
       canonical: `/articles/${article.slug}`,
     },
     openGraph: {
-      title: article.title,
-      description: article.description,
+      title: seoTitle,
+      description: seoDescription,
       type: "article",
       url: `/articles/${article.slug}`,
       publishedTime: article.publishedAt,
@@ -54,8 +60,8 @@ export function generateMetadata({ params }: ArticlePageProps): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
-      description: article.description,
+      title: seoTitle,
+      description: seoDescription,
       images: [toAbsoluteUrl(article.imageSrc)],
     },
   };
@@ -112,7 +118,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
       url: siteConfig.url,
     },
     image: toAbsoluteUrl(article.imageSrc),
-    keywords: article.keywords.join(", "),
+    keywords: [...article.keywords, "women cbt", "cbt for women", "women anxiety cbt"].join(", "),
   };
 
   const faqSchema = {

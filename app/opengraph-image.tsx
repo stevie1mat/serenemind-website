@@ -52,10 +52,10 @@ export default function OpenGraphImage() {
 
         <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
           <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.05, maxWidth: "980px" }}>
-            Anxiety Relief with AI Guidance and CBT Tools
+            Women CBT Anxiety Relief with AI Guidance
           </div>
           <div style={{ fontSize: 32, opacity: 0.85, maxWidth: "980px" }}>
-            Track moods, challenge anxious thoughts, and build calm daily routines.
+            Women-focused CBT tools to track moods, challenge anxious thoughts, and build calm routines.
           </div>
         </div>
 

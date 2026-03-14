@@ -52,10 +52,10 @@ export default function TwitterImage() {
 
         <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
           <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.05, maxWidth: "980px" }}>
-            Anxiety Relief with AI Guidance and CBT Tools
+            Women CBT Anxiety Relief with AI Guidance
           </div>
           <div style={{ fontSize: 32, opacity: 0.85, maxWidth: "980px" }}>
-            Mood tracking, CBT exercises, and supportive AI check-ins.
+            Women-focused mood tracking, CBT exercises, and supportive AI check-ins.
           </div>
         </div>
 
